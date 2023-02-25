@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/test_pop.css">
+    <title>teste_popup</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+
+<!------------------début popup----------------------->
+
+<div class="open-btn">
+    <button class="open-button" onclick="openForm()"><strong>Vidéo</strong></button>
+  </div>
+
+<div class="login-popup">
+<div class="form-popup" id="popupForm">
+    <video id="video1" controls width="1000">
+        <source src="../video/Nuit-de-la lecture-2023.mp4" type="video/mp4">
+
+    </video>
+   
+    <button type="button" class="btn-cancel" onclick="closeForm()">Retour</button>
+  
+</div>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("popupForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("popupForm").style.display = "none";
+}
+</script>
+
+
+<!------------------fin popup----------------------->
+
+
+
+<!------------------début slider----------------------->
+
+
+   
+<div class="slider">
+  <div class="slides">
+  <div class="slide"><img src="../img/Hacker-Thumb-a1.webp"  alt=""> </div>
+  <div class="slide"><img src="../img/Hacker-Thumb-a1.webp"  alt=""> </div>
+  <div class="slide"><img src="../img/Hacker-Thumb-a1.webp"  alt=""> </div>
+
+</div>
+</div>
+
+   
+  
+  
+</div>
+</div>
+
+
+
+
+<!------------------fin slider----------------------->
+
+

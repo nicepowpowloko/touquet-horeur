@@ -1,0 +1,140 @@
+
+
+
+
+/* debut Popup */
+
+
+.open-button {
+  background-color: red;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.8;
+
+}
+
+.btn-cancel {
+    background-color: red;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+  
+  }
+
+
+.login-popup {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.insc{
+  color: red;
+  font-size: 2em;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  left: 45%;
+  top: 5%;
+  transform: translate(-45%, 5%);
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 20px;
+  background-color: white;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #eee;
+  border: 2px black solid;
+  box-shadow: 2px 2px 2px red;
+}
+
+
+   .form-container .btn {
+    background-color:black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  
+  .form-container .cancel {
+    background-color: #312d2d;
+  }
+
+  .form-container .btn:hover,
+  .open-button:hover {
+    opacity: 1;
+  }
+
+  /*  fin Popup */
+
+
+
+
+    /*  debut slider */
+  
+
+
+    .slider{
+      width: 700px;
+      overflow: hidden;
+      margin: 150px auto;
+    }
+    
+    .slides{
+      width: calc(700px * 3);
+     animation: glisse 10s infinite;
+     
+    }
+    
+    .slide{
+      float: left;
+    }
+    
+    @keyframes glisse {
+      0% {
+        transform: translateX(0);
+      }
+      10% {
+        transform: translateX(0);
+      }
+      33% {
+        transform: translateX(-700px);
+      }
+      43% {
+        transform: translateX(-700px);
+      }
+      66% {
+        transform: translateX(-1400px);
+      }
+      76% {
+        transform: translateX(-1400px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+      /*  fin slider */
+
+  

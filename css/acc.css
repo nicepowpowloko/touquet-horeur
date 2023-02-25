@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: p;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 6 / 6; }
+    .div2 { grid-area: 1 / 4 / 5 / 6; }
+    .div3 { grid-area: 1 / 1 / 2 / 3; }
+    .div4 { grid-area: 2 / 1 / 3 / 3; }
+    .div5 { grid-area: 3 / 1 / 4 / 3; }
+    .div6 { grid-area: 4 / 1 / 5 / 3; } 
+
+
+    .div1{
+        height: 100vh;
+        width: auto;
+        background-image: url("../img/cb9f1f0bf784-Instagram_Post-avec-texte.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        z-index: -1;
+        
+    }
+
+    .sombre{
+        background-color: black;
+        height: 100vh;
+        width: auto;
+        opacity: 0.50;
+    }
+ 
+
+
+
+
+  .div2 #video1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    border: 3mm ridge rgba(0, 0, 0, 0.6);
+    box-shadow: black 2px 2px 3px;
+    flex-wrap: nowrap;
+    
+  }
+
+  
+
+    .div3{
+        
+        width: auto;
+        height: 20vh;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div3 h1 {
+        text-shadow: black 1px 0 10px;
+        color: white;
+        font-size: 4em;
+        font-weight: bold;
+        z-index: 2;
+       
+      }
+
+
+    .div4{
+       
+        width: auto;
+        height: 20vh;
+        z-index: 1;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin-left: 60px;
+        
+    }
+
+.div4 p{
+    color: white;
+    font-size: 1em;
+    
+}
+
+
+
+    .div5{
+        
+        width: auto;
+        height: 20vh;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+/*  BUTTON   */
+   
+    .button1 {
+        background-color: #7573e2;
+        display: inline-block;
+        padding: 12px 24px;
+        border: 1px solid #4f4f4f;
+        border-radius: 4px;
+        transition: all 0.2s ease-in;
+        position: relative;
+        overflow: hidden;
+        font-size: 19px;
+        color: black;
+        z-index: 1;
+      
+       }
+       .button1 a {
+        text-decoration: none;
+        color: black;
+       }
+    
+       .button2 a {
+        text-decoration: none;
+        color: black;
+       }
+       
+       
+       .button1:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) scaleY(1) scaleX(1.25);
+        top: 100%;
+        width: 140%;
+        height: 180%;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 50%;
+        display: block;
+        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+        z-index: -1;
+        
+       }
+       
+       .button1:after {
+        content: "";
+        position: absolute;
+        left: 55%;
+        transform: translateX(-50%) scaleY(1) scaleX(1.45);
+        top: 180%;
+        width: 160%;
+        height: 190%;
+        background-color: #39bda7;
+        border-radius: 50%;
+        display: block;
+        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+        z-index: -1;
+       }
+       
+       .button1:hover {
+        color: white;
+        border: 1px solid hsl(221, 54%, 48%);
+       }
+       
+       .button1:hover:before {
+        top: -35%;
+        background-color: hsl(221, 54%, 48%);
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+       }
+       
+       .button1:hover:after {
+        top: -45%;
+        background-color: hsl(221, 54%, 48%);
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+       }
+    
+       .button2 {
+        background-color: #7573e2;
+       
+        display: inline-block;
+        padding: 12px 24px;
+        border: 1px solid #4f4f4f;
+        border-radius: 4px;
+        transition: all 0.2s ease-in;
+        position: relative;
+        overflow: hidden;
+        font-size: 19px;
+        color: black;
+        z-index: 1;
+       }
+       
+       .button2:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) scaleY(1) scaleX(1.25);
+        top: 100%;
+        width: 140%;
+        height: 180%;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 50%;
+        display: block;
+        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+        z-index: -1;
+       }
+       
+       .button2:after {
+        content: "";
+        position: absolute;
+        left: 55%;
+        transform: translateX(-50%) scaleY(1) scaleX(1.45);
+        top: 180%;
+        width: 160%;
+        height: 190%;
+        background-color: #39bda7;
+        border-radius: 50%;
+        display: block;
+        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+        z-index: -1;
+       }
+       
+       .button2:hover {
+        color: white;
+        border: 1px solid hsl(221, 54%, 48%);
+       }
+       
+       .button2:hover:before {
+        top: -35%;
+        background-color: hsl(221, 54%, 48%);
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+       }
+       
+       .button2:hover:after {
+        top: -45%;
+        background-color: hsl(221, 54%, 48%);
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+       }
+
+
+/*   FIN DE BUTTON   */
+
+
+
+    .div6{
+        width: auto;
+        height: 20vh;
+        z-index: 1;
+        display: flex;
+       justify-content: center;
+       align-items: center;
+      margin-left: 200px;
+       
+    }
+
+    .p2{
+        color: white;
+    }
+
+
+
+
+    /*  RESPONSIVE   */
+
+    @media screen and (max-width: 700px){
+        .div2{
+
+            height: 50vh;
+            width: 30vh;
+            margin-left: -40px;  
+        }
+
+        .div3 h1{
+            font-size: 1.2em;
+            margin-top: -60px;
+           
+        }
+
+    .div5{
+     
+        margin: 10px;
+       margin-left: auto;
+       padding: 20px;
+
+    }
+
+
+    .div5 .button2 {
+  
+        margin-left: 100px;
+    }
+
+.div5 .button1 {
+  
+    margin-left: 50px;
+}
+
+
+.div4{
+    height: 70vh;
+    width: auto;
+    flex-flow: column wrap;
+    margin-top: -70px;
+}
+.div4 p{
+    margin-left: 5px;
+    
+}
+
+.div6 .p2{
+    height: 70vh;
+    width: auto;
+    margin-top: -300px;
+    margin-left: 500px;
+   
+   
+}
+
+.parent{
+    height: 100vh;
+    position: fixed;
+    
+}
+
+ }
+
+#video1{
+   
+    z-index: 1;
+}
+
+
+
+/* debut slider */
+
+
+img {
+    max-width: 100%;
+  }
+  .slider-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    overflow: hidden;
+    margin-top: -400px;
+    margin-right: 370px;
+  }
+  .menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+  }
+
+
+
+
+  .menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+  }
+
+
+
+
+  .menu label:hover,.menu label:focus {
+    background: #f65f02;
+  }
+ 
+
+
+
+  .slide-img {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+  }
+  [id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+  }
+  
+  /* fin slider */
+  
+  
+  
+  
+  @media screen and (max-width: 1600px){
+   
+    .div2 #video1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: -200px;
+        width: 500px;
+        border: 2mm ridge rgba(182, 190, 184, 0.6);
+        box-shadow: black 2px 2px 3px;
+       
+      }
+
+      .slider-container {
+        max-width: 500px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        margin-top: -350px;
+        margin-right: 312px;
+      }
+
+      .menu label:hover,.menu label:focus {
+        background: #f65f02;
+      }
+
+      .p2{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin-left: -120px;
+      }
+
+      h1{
+        margin-left: 50px;
+      }
+ 
+    }
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
